@@ -9,7 +9,7 @@ Personal dotfiles for my Arch Linux + Hyprland setup.
 ├── .config/
 │   ├── hypr/          # Hyprland config
 │   ├── waybar/       # Status bar
-│   ├── wofi/         # App launcher
+│   ├── vicinae/         # App launcher
 │   ├── ghostty/      # Terminal
 │   ├── starship.toml # Shell prompt
 │   ├── nvim/         # Neovim (LazyVim)
@@ -29,7 +29,7 @@ Personal dotfiles for my Arch Linux + Hyprland setup.
 - hyprland (wayland compositor)
 - ghostty (terminal)
 - waybar (status bar)
-- wofi (app launcher)
+- vicinae (app launcher)
 - starship (shell prompt)
 - neovim (editor)
 - dunst (notifications)
