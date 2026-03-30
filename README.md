@@ -7,9 +7,9 @@ Personal dotfiles for my Arch Linux + Hyprland setup.
 ```
 .dotfiles/
 ├── .config/
-│   ├── hypr/          # Hyprland config
+│   ├── hypr/         # Hyprland config
 │   ├── waybar/       # Status bar
-│   ├── vicinae/         # App launcher
+│   ├── vicinae/      # App launcher
 │   ├── ghostty/      # Terminal
 │   ├── starship.toml # Shell prompt
 │   ├── nvim/         # Neovim (LazyVim)
