@@ -1,0 +1,86 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "Hack-ZeroSlash", "CaskaydiaCove Nerd Font", "Symbols Nerd Font";
+    font-size: 13px;
+    font-weight: bold;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: transparent;
+    padding: 1px 0;
+}
+
+#start,
+#center,
+#end {
+    background-color: rgba(33, 37, 43, 0.85);
+    border: 1px solid #3e4451;
+    border-radius: 999px;
+}
+
+#start {
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+    margin-right: 8px;
+}
+
+#center {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+#end {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-left: 8px;
+}
+
+#custom-menu,
+#workspaces,
+#window,
+#tray,
+#pulseaudio,
+#custom-ds4,
+#clock {
+    background-color: transparent;
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+}
+
+#workspaces button {
+    background-color: transparent;
+    color: #5c6370;
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+}
+#workspaces button.visible {
+    color: #abb2bf;
+}
+#workspaces button.focused {
+    color: #61afef;
+}
+#workspaces button.urgent {
+    color: #e06c75;
+}
+
+#window {
+    color: #abb2bf;
+}
+#pulseaudio {
+    color: #98c379;
+}
+#custom-ds4 {
+    color: #56b6c2;
+}
+#clock {
+    color: #61afef;
+}
+
+tooltip {
+    background-color: #21252b;
+    border: 1px solid #3e4451;
+    border-radius: 6px;
+    color: #abb2bf;
+}

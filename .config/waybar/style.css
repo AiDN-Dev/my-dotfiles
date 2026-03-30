@@ -1,0 +1,233 @@
+/* OneDark Pro - Sleek Island Theme */
+@define-color bg        #282c34;
+@define-color bg-dark   #21252b;
+@define-color bg-darker #1b1f23;
+
+@define-color fg        #abb2bf;
+@define-color fg-dim    #5c6370;
+@define-color fg-dimmer #4b5263;
+
+@define-color surface   #323842;
+@define-color surface-l #3e4451;
+@define-color border    #3e4451;
+
+@define-color accent    #61afef;
+@define-color accent-2  #56b6c2;
+@define-color green     #98c379;
+@define-color yellow    #e5c07b;
+@define-color orange    #d19a66;
+@define-color red       #e06c75;
+@define-color magenta   #c678dd;
+
+* {
+    font-family: "CaskaydiaCove Nerd Font", "Inter", sans-serif;
+    font-size: 13;
+    font-weight: 500;
+    min-height: 0;
+    padding: 0;
+    margin: 0;
+}
+
+window#waybar {
+    background: transparent;
+    color: @fg;
+}
+
+/* ══════════════════════════════════════════════════════
+   CENTER BOX - Creates the island effect
+   ══════════════════════════════════════════════════════ */
+.modules-center {
+    background: @bg;
+    border: 1px solid @border;
+    border-radius: 14px;
+    padding: 4px 8px;
+    margin: 0;
+}
+
+/* ══════════════════════════════════════════════════════
+   LEFT SECTION - Window & Language
+   ══════════════════════════════════════════════════════ */
+#window {
+    color: @fg;
+    padding: 4px 12px;
+    margin-right: 2px;
+    border-radius: 10px;
+    background: transparent;
+}
+
+#window.empty {
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    min-width: 0;
+}
+
+#language {
+    color: @fg;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 10px;
+    margin-right: 6px;
+    border-radius: 8px;
+    background: @surface;
+}
+
+/* ══════════════════════════════════════════════════════
+   CENTER SECTION - Workspaces (Main Focus)
+   ══════════════════════════════════════════════════════ */
+#workspaces {
+    background: @surface;
+    border-radius: 12px;
+    padding: 2px 2px;
+    margin: 0 8px;
+}
+
+#workspaces button {
+    padding: 0 4px;
+    margin: 0;
+    color: @fg-dim;
+    background: transparent;
+    border: none;
+    border-radius: 8px;
+    min-width: 26px;
+    min-height: 26px;
+}
+
+#workspaces button.active {
+    color: @accent;
+    background: alpha(@accent-2, 0.25);
+}
+
+#workspaces button:hover {
+    color: @fg;
+    background: @surface-l;
+}
+
+#workspaces button.urgent {
+    color: @red;
+    background: alpha(@red, 0.15);
+}
+
+/* ══════════════════════════════════════════════════════
+   RIGHT SECTION - Tray, Clock, Power
+   ══════════════════════════════════════════════════════ */
+#tray {
+    padding: 4px 14px;
+    margin-left: 6px;
+    border-radius: 8px;
+    background: transparent;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+}
+
+#tray menu {
+    background: @bg;
+    border: 1px solid @border;
+    border-radius: 8px;
+}
+
+#clock {
+    color: @fg;
+    font-weight: 600;
+    padding: 4px 12px;
+    margin-left: 2px;
+    border-radius: 8px;
+    background: transparent;
+}
+
+#clock:hover {
+    background: @surface;
+}
+
+#custom-power {
+    color: @fg-dim;
+    font-size: 14px;
+    padding: 4px 10px;
+    margin-left: 2px;
+    border-radius: 8px;
+    background: transparent;
+}
+
+#custom-power:hover {
+    color: @red;
+    background: alpha(@red, 0.15);
+}
+
+/* ══════════════════════════════════════════════════════
+   PULSEAUDIO
+   ══════════════════════════════════════════════════════ */
+#pulseaudio {
+    color: @fg;
+    font-size: 16px;
+    padding: 4px 10px;
+    margin-left: 2px;
+    border-radius: 8px;
+    background: transparent;
+}
+
+#pulseaudio.muted {
+    color: @fg-dim;
+}
+
+#pulseaudio:hover {
+    color: @accent;
+    background: @surface;
+}
+
+/* ══════════════════════════════════════════════════════
+   NETWORK
+   ══════════════════════════════════════════════════════ */
+#network {
+    color: @fg;
+    font-size: 16px;
+    padding: 4px 10px;
+    margin-left: 2px;
+    border-radius: 8px;
+    background: transparent;
+}
+
+#network.disconnected {
+    color: @red;
+}
+
+#network:hover {
+    color: @accent;
+    background: @surface;
+}
+
+/* ══════════════════════════════════════════════════════
+   DS4 CONTROLLER
+   ══════════════════════════════════════════════════════ */
+#custom-ds4 {
+    color: @fg;
+    font-size: 16px;
+    padding: 4px 10px;
+    margin-left: 2px;
+    border-radius: 8px;
+    background: transparent;
+}
+
+#custom-ds4:hover {
+    color: @accent;
+    background: @surface;
+}
+
+/* ══════════════════════════════════════════════════════
+   TOOLTIPS
+   ══════════════════════════════════════════════════════ */
+tooltip {
+    background: @bg;
+    border: 1px solid @border;
+    border-radius: 8px;
+    padding: 8px 12px;
+}
+
+tooltip label {
+    color: @fg;
+}

@@ -1,0 +1,6 @@
+/* Debug: Add red border to see what's being styled */
+#start, #center, #end {
+    background-color: rgba(33, 37, 43, 0.85) !important;
+    border: 2px solid #e06c75 !important;
+    border-radius: 999px;
+}

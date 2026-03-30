@@ -1,0 +1,37 @@
+# Games & Launchers
+heroic/
+retroarch/
+paradox-launcher-v2/
+unity3d/
+Emulation/
+Games/
+FM24/
+Prison Architect/
+
+# Large/Binary apps
+discord/
+obs-studio/
+spotify/
+OpenRGB/
+
+# Caches & Logs
+.cache/
+*.log
+
+# App data
+.mozilla/
+.pki/
+.var/
+.steam/
+.wine/
+.local/
+.steampath
+.steampid
+
+# IDE & Editor
+.godot/
+zed/
+
+# Misc
+.gnupg/
+.voice/

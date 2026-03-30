@@ -1,0 +1,102 @@
+{
+  "reload_style_on_change": true,
+  "layer": "bottom",
+  "position": "top",
+  "height": 36,
+  "margin-top": 8,
+
+  // All modules in center to create island effect
+  "modules-left": [],
+  "modules-center": ["hyprland/window", "hyprland/language", "hyprland/workspaces", "tray", "clock", "pulseaudio", "custom/ds4", "network", "custom/power"],
+  "modules-right": [],
+
+  "hyprland/workspaces": {
+    "on-click": "activate",
+    "format": "{icon}",
+    "format-icons": {
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": " ",
+      "7": "7",
+      "8": "8",
+      "9": "9",
+      "10": "10"
+    },
+    "all-outputs": true
+  },
+
+  "hyprland/window": {
+    "format": "{title}",
+    "max-length": 25,
+    "icon": true,
+    "icon-size": 14,
+    "separate-outputs": true
+  },
+
+  "hyprland/language": {
+    "format": "{short}",
+    "tooltip": true,
+    "tooltip-format": "{long}"
+  },
+
+  "clock": {
+    "format": "{:%H:%M}",
+    "format-alt": "{:%a %d %b}",
+    "tooltip-format": "<tt><small>{calendar}</small></tt>",
+    "calendar": {
+      "mode": "month",
+      "format": {
+        "months": "<span color='#abb2bf'><b>{}</b></span>",
+        "days": "<span color='#abb2bf'>{}</span>",
+        "weekdays": "<span color='#61afef'><b>{}</b></span>",
+        "today": "<span color='#e06c75'><b><u>{}</u></b></span>"
+      }
+    }
+  },
+
+  "tray": {
+    "icon-size": 18,
+    "spacing": 14,
+    "show-passive-items": true
+  },
+
+  "custom/power": {
+    "format": "⏻",
+    "tooltip": false,
+    "on-click": "wlogout"
+  },
+
+  "pulseaudio": {
+    "format": "{icon}",
+    "format-muted": "󰖁",
+    "format-icons": {
+      "headphone": "󰋋",
+      "headset": "󰋎",
+      "default": ["󰕿", "󰖀", "󰕾", "󱄠"]
+    },
+    "scroll-step": 5,
+    "on-click": "ghostty -e pulsemixer",
+    "tooltip-format": "{desc}\n{volume}%"
+  },
+
+  "network": {
+    "format-ethernet": "󰈀",
+    "format-wifi": "󰖩",
+    "format-disconnected": "󰖪",
+    "tooltip-format-ethernet": "󰈀 {ipaddr}/{cidr}\n󰕒 {bandwidthUpBytes} 󰇚 {bandwidthDownBytes}",
+    "tooltip-format-wifi": "󰖩 {essid} ({signalStrength}%)\n{ipaddr}/{cidr}",
+    "tooltip-format-disconnected": "Disconnected",
+    "interval": 5
+  },
+
+  "custom/ds4": {
+    "format": "{}",
+    "exec": "/home/aidn/.config/waybar/scripts/ds4-battery.sh",
+    "interval": 30,
+    "return-type": "json",
+    "signal": 8
+  }
+}
