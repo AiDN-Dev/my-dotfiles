@@ -1,6 +1,6 @@
 # My Dotfiles
 
-Personal dotfiles for my Arch Linux + Hyprland setup.
+These are my personal dotfiles for my Arch + Hyprland setup, Big shoutout to [mikkurogue](https://github.com/mikkurogue/) for the waybar config, I've just added some bits
 
 ## Structure
 
@@ -45,3 +45,10 @@ Personal dotfiles for my Arch Linux + Hyprland setup.
 - Caches and app data
 
 ## Screengrabs
+Empty Workspace
+<img width="1913" height="1080" alt="image" src="https://github.com/user-attachments/assets/06b08297-40dd-4fc3-9f27-6388cf274050" />
+
+Workspace with 2 tiles
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e8f64654-a5ac-4528-b10e-045af9f8a25c" />
+
+
