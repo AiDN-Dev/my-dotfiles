@@ -36,7 +36,7 @@ These are my personal dotfiles for my Arch + Hyprland setup, Big shoutout to [mi
 - fastfetch (system info)
 
 ### Fonts
-- CaskaydiaCove Nerd Font
+- Hack-ZeroSlash
 
 ## Excluded from repo
 
