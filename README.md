@@ -43,3 +43,5 @@ Personal dotfiles for my Arch Linux + Hyprland setup.
 - Game configs (Heroic, RetroArch, Paradox Launcher)
 - Large apps (Discord, OBS, Spotify)
 - Caches and app data
+
+## Screengrabs
