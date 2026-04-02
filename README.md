@@ -51,4 +51,9 @@ Empty Workspace
 Workspace with 2 tiles
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e8f64654-a5ac-4528-b10e-045af9f8a25c" />
 
+Albert launcher
+<img width="1918" height="1080" alt="image" src="https://github.com/user-attachments/assets/cb9aecd5-da6d-4553-ae33-9eb5a6320b3c" />
+
+
+
 
